@@ -31,3 +31,4 @@ router.post("/api/df_text_query", async (req, res) => {
   res.send(result);
 });
 
+module.exports = router;
