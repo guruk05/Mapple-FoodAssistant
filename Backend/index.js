@@ -15,3 +15,6 @@ app.use(bodyParser.json());
 app.get("/api", (req, res) => {
   res.send({ hello: "there" });
 });
+
+app.use(dialogFlowRoutes);
+app.use(fulfillmentRoutes);
