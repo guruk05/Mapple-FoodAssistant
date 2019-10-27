@@ -16,3 +16,6 @@ router.post("/api/df_text_query", async (req, res) => {
     const result = responses[0].queryResult;
     res.send(result);
   });
+
+  router.post("/api/df_event_query", async (req, res) => {
+    const { event, userID, parameters } = req.body;
