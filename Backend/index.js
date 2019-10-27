@@ -9,3 +9,9 @@ const PORT = process.env.PORT || 5000;
 //Routes
 const dialogFlowRoutes = require("./routes/dialogFlow");
 const fulfillmentRoutes = require("./routes/fulfillment");
+
+app.use(bodyParser.json());
+
+app.get("/api", (req, res) => {
+  res.send({ hello: "there" });
+});
