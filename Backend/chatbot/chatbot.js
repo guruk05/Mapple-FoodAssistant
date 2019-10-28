@@ -35,3 +35,20 @@ const credentials = {
       responses = await this.handleAction(responses);
       return responses;
     },
+
+    eventQuery: async function(event, userID, parameters = {}) {
+        let sessionPath = sessionClient.sessionPath(projectID, sessionID + userID);
+        const request = {
+          session: sessionPath,
+          queryInput: {
+            event: {
+              name: event,
+              parameters: structjson.jsonToStructProto(parameters),
+              languageCode: languageCode
+            }
+          }
+        };
+        let responses = await sessionClient.detectIntent(request);
+        responses = await this.handleAction(responses);
+        return responses;
+      },
