@@ -10,3 +10,5 @@ const credentials = {
     client_email: config.googleClientEmail,
     private_key: config.googlePrivateKey
   };
+
+  const sessionClient = new dialogFlow.SessionsClient({ projectID, credentials });
