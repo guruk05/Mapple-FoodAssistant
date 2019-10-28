@@ -13,7 +13,6 @@ pids
 *.seed
 *.pid.lock
 
-
 # Coverage directory used by tools like istanbul
 coverage
 
@@ -26,16 +25,8 @@ build/Release
 # Dependency directories
 node_modules/
 
-
-# TypeScript v1 declaration files
-typings/
-
 # Optional npm cache directory
 .npm
-
-
-
-
 
 # dotenv environment variables file
 .env
