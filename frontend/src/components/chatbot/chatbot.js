@@ -30,7 +30,7 @@ class Chatbot extends Component {
         cookies.set("userID", uuid(), { path: "/" });
       }
   
-      //Binding event listeners
+      //event listeners
       this.toggleBot = this.toggleBot.bind(this);
       this._handleInputKeyPress = this._handleInputKeyPress.bind(this);
     }
@@ -61,5 +61,6 @@ class Chatbot extends Component {
       }
     }
 
-    
+  
+
 }
