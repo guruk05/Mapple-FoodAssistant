@@ -165,7 +165,7 @@ class Chatbot extends Component {
         }
       }
     
-      //Renders all the messages
+      
       renderMessages(stateMessages) {
         if (stateMessages) {
           return stateMessages.map((message, i) => {
@@ -179,4 +179,89 @@ class Chatbot extends Component {
         this.setState({ showBot: !this.state.showBot });
       }
 
-}
+      _handleInputKeyPress(e) {
+        if (e.key === "Enter" && e.target.value !== "") {
+          this.df_text_query(e.target.value);
+          e.target.value = "";
+        }
+      }
+    
+      render() {
+        const { showBot, botName } = this.state;
+    
+        if (showBot) {
+          return (
+            <div
+              style={{
+                height: 500,
+                width: 450,
+                position: "absolute",
+                bottom: 0,
+                right: 0,
+                zIndex: 1000
+              }}
+            >
+              <nav>
+                <div id="chatwindow-nav" className="nav-wrapper">
+                  <span>{ botName }</span>
+                  <span className="close" onClick={this.toggleBot}>x</span>
+                </div>
+              </nav>
+              <div
+                id="chatbot"
+                style={{ height: '375px', width: "100%", overflow: "auto", backgroundColor: "white" }}
+              >
+                {this.renderMessages(this.state.messages)}
+                <div
+                  ref={el => {
+                    this.messagesEnd = el;
+                  }}
+                  style={{ float: "left", clear: "both" }}
+                />
+              </div>
+                <input
+                  type="text"
+                  ref={input => {
+                    this.chatInput = input;
+                  }}
+                  style={{
+                    paddingLeft: '1%',
+                    paddingRight: '1%',
+                    width: '98%',
+                    backgroundColor: "white",
+                    color: "#222222",
+                    borderTop: '1px solid lightgrey',
+                    marginBottom: 0
+                  }}
+                  placeholder="Start Talking to the bot!"
+                  onKeyPress={this._handleInputKeyPress}
+                />
+              
+            </div>
+          );
+        } else {
+    
+          return (
+            <div
+              style={{
+                width: 450,
+                position: "absolute",
+                bottom: 0,
+                right: 0,
+                zIndex: 1000
+              }}
+            >
+              <nav onClick={this.toggleBot}>
+                <div id="chatwindow-nav" className="nav-wrapper">
+                  <span>{ botName }</span>
+                </div>
+              </nav>
+            </div>
+          );
+        }
+      }
+    }
+    
+    export default Chatbot;
+
+
