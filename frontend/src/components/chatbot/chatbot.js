@@ -98,4 +98,35 @@ class Chatbot extends Component {
         this.sound.play();
       }
 
+      async df_event_query(event) {
+        const res = await axios.post("/api/df_event_query", {
+          event,
+          userID: cookies.get("userID")
+        });
+        // Iterating over all the responeses in the the request response
+        // because the chatbot can have multiple responses for a single phrase
+        for (let msg of res.data.fulfillmentMessages) {
+          let says = {
+            speaks: "bot",
+            message: msg
+          };
+          this.setState({ messages: [...this.state.messages, says] });
+        }
+        this.sound.play();
+      }
+    
+      //Helper functions
+      isNormalMessage(message) {
+        return message.message && message.message.text && message.message.text.text;
+      }
+    
+      isMessageCard(message) {
+        return (
+          message.message &&
+          message.message.payload &&
+          message.message.payload.fields &&
+          message.message.payload.fields.cards
+        );
+      }
+
 }
