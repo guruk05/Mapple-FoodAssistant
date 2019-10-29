@@ -129,4 +129,54 @@ class Chatbot extends Component {
         );
       }
 
+
+      renderCards(cards) {
+        return cards.map((card, i) => <Card key={i} payload={card.structValue} />);
+      }
+    
+      renderOneMessage(message, i) {
+        if (this.isNormalMessage(message)) {
+          return (
+              <Message
+                key={i}
+                speaks={message.speaks}
+                text={message.message.text.text}
+              />
+          );
+        } else if (this.isMessageCard(message)) {
+          return (
+            <div key={i}>
+              <div className="container">
+                <div
+                  style={{
+                    height: 200,
+                    width:
+                      message.message.payload.fields.cards.listValue.values.length * 150,
+                    paddingLeft: '12%'
+                  }}
+                >
+                  {this.renderCards(
+                    message.message.payload.fields.cards.listValue.values
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        }
+      }
+    
+      //Renders all the messages
+      renderMessages(stateMessages) {
+        if (stateMessages) {
+          return stateMessages.map((message, i) => {
+            return this.renderOneMessage(message, i);
+          });
+        }
+        return null;
+      }
+    
+      toggleBot() {
+        this.setState({ showBot: !this.state.showBot });
+      }
+
 }
