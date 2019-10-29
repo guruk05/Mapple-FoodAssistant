@@ -17,6 +17,16 @@ Mapple chatbot provides users with Restaurant and dish information with AI enabl
  #### <a href="https://expressjs.com/"> Express JS </a>
  #### <a href="https://www.mongodb.com/"> MongoDb </a>
  
-## Design:
+## Preview:
+
+  ![designr1.PNG](designr1.PNG)
+  
+  ![designr2.PNG](designr2.PNG)
+  
+  ![designr3.PNG](designr3.PNG)
+  
+  ![designr3.PNG](designr4.PNG)
+  
+
 
 
