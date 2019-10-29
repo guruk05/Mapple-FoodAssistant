@@ -7,8 +7,8 @@ Mapple chatbot provides users with Restaurant and dish information with AI enabl
 
 ## Author: 
 
-  #### <a href="https://github.com/guruk05">Guru Prasath</a>
-  #### <a href="https://github.com/SudheerReddySingam">Sudheer Reddy</a>
+ * #### <a href="https://github.com/guruk05">Guru Prasath</a>
+ * #### <a href="https://github.com/SudheerReddySingam">Sudheer Reddy</a>
   
 ## Developed Using:
 
