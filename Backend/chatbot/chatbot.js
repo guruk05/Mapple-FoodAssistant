@@ -51,4 +51,5 @@ const credentials = {
         let responses = await sessionClient.detectIntent(request);
         responses = await this.handleAction(responses);
         return responses;
-      },
+      }
+    }
