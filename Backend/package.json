@@ -1,0 +1,26 @@
+{
+  "name": "food-chatbot-using-mern-full-stack",
+  "version": "1.0.0",
+  "description": "A chatBot using Dialogflow and Mern Stack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guruk05/Food-ChatBot-using-MERN-FULL-STACK.git"
+  },
+  "author": "Guru prasath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guruk05/Food-ChatBot-using-MERN-FULL-STACK/issues"
+  },
+  "homepage": "https://github.com/guruk05/Food-ChatBot-using-MERN-FULL-STACK#readme",
+  "dependencies": {
+    "actions-on-google": "^2.12.0",
+    "body-parser": "^1.19.0",
+    "dialogflow": "^0.12.2",
+    "dialogflow-fulfillment": "^0.6.1",
+    "express": "^4.17.1"
+  }
+}
