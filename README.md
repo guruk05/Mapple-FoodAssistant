@@ -21,12 +21,17 @@ Mapple chatbot provides users with Restaurant and dish information with AI enabl
 
   ![designr1.PNG](designr1.PNG)
   
+  
   ![designr2.PNG](designr2.PNG)
+  
   
   ![designr3.PNG](designr3.PNG)
   
+  
   ![designr3.PNG](designr4.PNG)
   
+  
+## Developed to Chat !
 
 
 
