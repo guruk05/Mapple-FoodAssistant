@@ -4,7 +4,8 @@
   "description": "A chatBot using Dialogflow and Mern Stack",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "backend": "node index.js"
   },
   "repository": {
     "type": "git",
