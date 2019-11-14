@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A chatBot using Dialogflow and Mern Stack",
   "main": "index.js",
+  "engines": {
+    "node":"10.6.0",
+    "npm": "6.1.0" 
+  },
   "scripts": {
     "start": "node index.js",
     "backend": "node index.js"
