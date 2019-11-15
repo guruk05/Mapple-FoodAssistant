@@ -20,7 +20,7 @@ Mapple chatbot provides users with Restaurant and dish information with AI enabl
 
 ## DialogFlow 
 
-DialogFlow Offers human interaction technologies which is powered by Artificial Intelligence, NLP and NLU. By using dialogFlow customized chatbots for websites, android and ios can be built.
+DialogFlow Offers human interaction technologies which is powered by Artificial Intelligence, NLP and NLU. By using dialogFlow customized chatbots for websites, android and ios can be built. Assistants similar to Google assistants and any type of service that involves users interaction is also possible using DialogFlow.
 
  ![designr6.PNG](designr6.PNG)
  
