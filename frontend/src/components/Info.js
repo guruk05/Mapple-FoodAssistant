@@ -22,4 +22,7 @@ const Info = () => (
 </Card>
 );
 
+export default Info ;
+
+
 
