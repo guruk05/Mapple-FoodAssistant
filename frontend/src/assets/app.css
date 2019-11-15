@@ -30,7 +30,13 @@ body {
 	cursor: pointer;
 }
 
-
+#info {
+	display:cover;
+	margin-top:3em;
+	width:50em;
+	height:55%;
+	color:black;
+  }
    
 
 .chatbubble {
