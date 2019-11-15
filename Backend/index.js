@@ -22,14 +22,7 @@ app.get("/api", (req, res) => {
 app.use(dialogFlowRoutes);
 app.use(fulfillmentRoutes);
 
-if (process.env.NODE_ENV === "production") {
-    // js and css files
-    app.use(express.static("client/build"));
-    // index.html
-    app.get("*", (req, res) => {
-      res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-    });
-  }
+
 
   app.listen(PORT, () => {
     console.log(`server started at port ${PORT}`);

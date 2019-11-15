@@ -115,7 +115,6 @@ class Chatbot extends Component {
         this.sound.play();
       }
     
-      //Helper functions
       isNormalMessage(message) {
         return message.message && message.message.text && message.message.text.text;
       }
