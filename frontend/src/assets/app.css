@@ -30,14 +30,8 @@ body {
 	cursor: pointer;
 }
 
-#info {
-  position:absolute;
-  top:25%;
-  left:25%;
-  -ms-transform: translateX(-25%) translateY(-25%);
-  -webkit-transform: translate(-25%,-25%);
-  transform: translate(-25%,-25%);
-}   
+
+   
 
 .chatbubble {
 	max-width: 350px;
