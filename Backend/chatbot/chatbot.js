@@ -14,6 +14,8 @@ const credentials = {
     private_key: config.googlePrivateKey
   };
 
+  // Initializing DialogFlowsessionClient
+  
   const sessionClient = new dialogFlow.SessionsClient({ projectID, credentials });
 
   module.exports = {
