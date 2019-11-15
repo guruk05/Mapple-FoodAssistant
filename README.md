@@ -12,7 +12,7 @@ Mapple chatbot provides users with Restaurant and dish information with AI enabl
   
 ## Developed Using:
 
-* ####  <a href="https://dialogflow.com/"> React Js </a>
+* ####  <a href="https://dialogflow.com/"> DialogFlow </a>
 * ####  <a href="https://reactjs.org/"> React Js </a> 
 * ####  <a href="https://nodejs.org/en/"> Node JS </a> 
 * ####  <a href="https://expressjs.com/"> Express JS </a>
