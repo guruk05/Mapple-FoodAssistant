@@ -19,6 +19,8 @@ Mapple chatbot provides users with Restaurant and dish information with AI enabl
 * ####  <a href="https://www.mongodb.com/"> MongoDb </a>
 
 ## DialogFlow 
+
+ ![designr6.PNG](designr6.PNG)
  
 ## Preview:
 
