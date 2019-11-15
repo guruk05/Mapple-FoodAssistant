@@ -1,7 +1,7 @@
 const dialogFlow = require("dialogflow");
 const config = require("../config/keys");
 
-// Integrating DialogFlow 
+// Integrating DialogFlow using googleProjectID
 
 const projectID = config.googleProjectID;
 const sessionID = config.dialogFlowSessionID;
