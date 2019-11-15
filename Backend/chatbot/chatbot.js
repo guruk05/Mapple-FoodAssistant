@@ -7,7 +7,7 @@ const projectID = config.googleProjectID;
 const sessionID = config.dialogFlowSessionID;
 const languageCode = config.dialogFlowSessionLanguageCode;
 
-// Credentials
+  // Credentials
 
 const credentials = {
     client_email: config.googleClientEmail,
@@ -15,7 +15,7 @@ const credentials = {
   };
 
   // Initializing DialogFlowsessionClient
-  
+
   const sessionClient = new dialogFlow.SessionsClient({ projectID, credentials });
 
   module.exports = {
