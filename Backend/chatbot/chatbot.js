@@ -7,6 +7,8 @@ const projectID = config.googleProjectID;
 const sessionID = config.dialogFlowSessionID;
 const languageCode = config.dialogFlowSessionLanguageCode;
 
+// Credentials
+
 const credentials = {
     client_email: config.googleClientEmail,
     private_key: config.googlePrivateKey
